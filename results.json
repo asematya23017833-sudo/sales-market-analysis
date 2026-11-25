@@ -1,0 +1,66 @@
+{
+  "kpis": {
+    "order_lines": 9994,
+    "customers": 793,
+    "total_sales": 2297200.86,
+    "total_profit": 286397.02,
+    "margin": 0.1247
+  },
+  "by_region": [
+    {
+      "Region": "West",
+      "sales": 725458.0,
+      "share": 0.3158
+    },
+    {
+      "Region": "East",
+      "sales": 678781.0,
+      "share": 0.2955
+    },
+    {
+      "Region": "Central",
+      "sales": 501240.0,
+      "share": 0.2182
+    },
+    {
+      "Region": "South",
+      "sales": 391722.0,
+      "share": 0.1705
+    }
+  ],
+  "by_category": [
+    {
+      "Category": "Technology",
+      "sales": 836154.0,
+      "profit": 145455.0
+    },
+    {
+      "Category": "Furniture",
+      "sales": 742000.0,
+      "profit": 18451.0
+    },
+    {
+      "Category": "Office Supplies",
+      "sales": 719047.0,
+      "profit": 122491.0
+    }
+  ],
+  "profit_by_discount_band": [
+    {
+      "band": "high",
+      "profit": -99559.0
+    },
+    {
+      "band": "low",
+      "profit": 100785.0
+    },
+    {
+      "band": "mid",
+      "profit": -35817.0
+    },
+    {
+      "band": "none",
+      "profit": 320988.0
+    }
+  ]
+}

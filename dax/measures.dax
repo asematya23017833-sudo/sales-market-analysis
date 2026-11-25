@@ -1,0 +1,7 @@
+-- DAX measures for the Power BI version
+Total Sales = SUM ( Orders[Sales] )
+Total Profit = SUM ( Orders[Profit] )
+Profit Margin = DIVIDE ( [Total Profit], [Total Sales] )
+Sales Share of Region = DIVIDE ( [Total Sales], CALCULATE ( [Total Sales], ALL ( Orders[Region] ) ) )
+Orders Count = DISTINCTCOUNT ( Orders[Order ID] )
+Loss Maker Flag = IF ( [Total Profit] < 0, 1, 0 )
