@@ -42,13 +42,13 @@ fig.tight_layout(); fig.savefig(ROOT / "charts" / "category_region.png", dpi=120
 fig, ax = plt.subplots(figsize=(10, 4))
 for cat, grp in monthly.groupby("Category"):
     ax.plot(pd.to_datetime(grp["month"]), grp["sales"], label=cat, lw=1.3)
-ax.set_title("Monthly sales trend by category"); ax.legend(); ax.set_ylabel("USD")
+ax.set_title("Monthly sales trend by category"); ax.legend(); ax.set_ylabel("units")
 fig.tight_layout(); fig.savefig(ROOT / "charts" / "monthly_trend.png", dpi=120); plt.close(fig)
 
 fig, ax = plt.subplots(figsize=(7, 4))
 colors = ["#c0392b" if p < 0 else "#27ae60" for p in discount["profit"]]
 ax.bar(discount["band"], discount["profit"], color=colors)
-ax.set_title("Profit by discount band"); ax.set_ylabel("USD")
+ax.set_title("Profit by discount band"); ax.set_ylabel("units")
 fig.tight_layout(); fig.savefig(ROOT / "charts" / "discount_profit.png", dpi=120); plt.close(fig)
 
 summary = {"kpis": kpis.to_dict("records")[0],
